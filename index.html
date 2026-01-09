@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Web List Creator</h1>
+
+    <h2>Unordered List</h2>
+    <ul id="unordered-list">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Water</li>
+        <li class="completed">Soda</li>
+    </ul>
+
+    <h2>Ordered List</h2>
+    <ol id="ordered-list">
+        <li>Morning Routine</li>
+        <li>Afternoon Work</li>
+        <li>Evening Relaxation</li>
+    </ol>
+
+    <h3>Add New Item</h3>
+    <input type="text" id="newItemText" placeholder="Item Name">
+    <select id="listType">
+        <option value="unordered-list">Unordered List</option>
+        <option value="ordered-list">Ordered List</option>
+    </select>
+    <button id="addItemButton">Add to List</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
