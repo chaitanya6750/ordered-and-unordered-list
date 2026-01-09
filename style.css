@@ -1,44 +1,50 @@
-/* --- Global & Body Styles --- */
+/* --- Global Reset and Body Styling --- */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 40px;
-    background-color: #e3f2fd; /* Light Cyan/Sky Blue Background */
-    color: #333;
+    padding: 30px;
+    background-color: #f7f7ff; /* Very light lavender background */
+    color: #444;
 }
 
-/* --- Typography & Headings --- */
+/* --- Typography and Headings --- */
 h1 {
-    color: #0d47a1; /* Deep Blue Title */
+    color: #5d4037; /* Dark brown for contrast */
     text-align: center;
     margin-bottom: 30px;
-    border-bottom: 3px solid #4fc3f7;
     padding-bottom: 10px;
+    border-bottom: 2px solid #e0b0ff; /* Light purple accent line */
+    font-size: 2.2em;
 }
 
 h2 {
-    color: #1b5e20; /* Dark Green Section Header */
-    margin-top: 30px;
+    color: #8e24aa; /* Medium purple headers */
+    margin-top: 25px;
     margin-bottom: 15px;
+}
+
+h3 {
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 /* --- List Containers --- */
 #unordered-list, #ordered-list {
     background-color: white;
-    padding: 25px 30px;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    border-left: 5px solid #4fc3f7; /* Accent border */
+    padding: 20px 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* --- List Items --- */
+/* --- List Items and Interactivity --- */
 li {
-    padding: 12px 10px;
-    border-bottom: 1px solid #e1f5fe; /* Lighter border line */
+    padding: 12px 5px;
+    border-bottom: 1px dashed #f0e6fa; /* Subtle dashed separator */
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.1s;
-    font-size: 1.1em;
+    font-size: 1.05em;
+    transition: background-color 0.2s;
 }
 
 li:last-child {
@@ -46,56 +52,49 @@ li:last-child {
 }
 
 li:hover {
-    background-color: #fce4ec; /* Light Pink hover effect */
-    transform: translateX(5px);
+    background-color: #fce4ec; /* Light pink hover effect */
 }
 
-/* --- List Type Customization --- */
+/* --- List Customization --- */
 #unordered-list {
-    list-style-type: '🐠 '; /* Custom marker (Fish emoji for fun) */
-    padding-left: 30px;
+    list-style-type: square;
+    color: #4a148c; /* Deep purple list item text */
 }
 
 #ordered-list {
-    list-style-type: upper-roman;
-    color: #388e3c; /* Darker green list items */
+    list-style-type: upper-alpha; /* A, B, C... */
+    color: #ad1457; /* Deep magenta list item text */
 }
 
-/* --- Interactivity Status --- */
+/* --- Completed Item Style --- */
 .completed {
     text-decoration: line-through;
-    color: #a5d6a7; /* Light green for completed item */
+    color: #b0bec5; /* Light grey for completed */
     font-style: italic;
-    background-color: #f1f8e9; /* Very light background for completed */
+    background-color: #fdfdff;
 }
 
-/* --- Input & Button Styles (Action Zone) --- */
-h3 {
-    color: #ffb300; /* Amber title for action section */
-}
-
+/* --- Input and Button Styles --- */
 #newItemText, #listType {
-    padding: 12px;
-    margin-right: 15px;
-    border-radius: 8px;
-    border: 2px solid #b3e5fc; /* Light blue border */
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ce93d8; /* Light purple border */
     font-size: 1em;
-    width: 250px;
 }
 
 #addItemButton {
-    padding: 12px 25px;
-    background-color: #ffb300; /* Primary action color (Amber) */
-    color: #333;
-    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #ab47bc; /* Main button color (Purple) */
+    color: white;
+    font-weight: 600;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
+    transition: background-color 0.2s, transform 0.1s;
 }
 
 #addItemButton:hover {
-    background-color: #ff8f00; /* Darker Amber on hover */
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    background-color: #8e24aa; /* Darker purple on hover */
+    transform: translateY(-1px);
 }
