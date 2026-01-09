@@ -1,32 +1,44 @@
+/* --- Global & Body Styles --- */
 body {
-    font-family: sans-serif;
-    margin: 40px;
-    background-color: #f0f8ff;
-}
-
-h1 {
-    color: #1e90ff;
-}
-
-h2 {
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 40px;
+    background-color: #e3f2fd; /* Light Cyan/Sky Blue Background */
     color: #333;
 }
 
-#unordered-list, #ordered-list {
-    background-color: white;
-    padding: 20px;
+/* --- Typography & Headings --- */
+h1 {
+    color: #0d47a1; /* Deep Blue Title */
+    text-align: center;
     margin-bottom: 30px;
-    border-radius: 6px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #4fc3f7;
+    padding-bottom: 10px;
 }
 
+h2 {
+    color: #1b5e20; /* Dark Green Section Header */
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* --- List Containers --- */
+#unordered-list, #ordered-list {
+    background-color: white;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #4fc3f7; /* Accent border */
+}
+
+/* --- List Items --- */
 li {
-    padding: 10px 0;
-    border-bottom: 1px dashed #e0e0e0;
+    padding: 12px 10px;
+    border-bottom: 1px solid #e1f5fe; /* Lighter border line */
     cursor: pointer;
-    transition: all 0.2s;
+    transition: background-color 0.3s, transform 0.1s;
+    font-size: 1.1em;
 }
 
 li:last-child {
@@ -34,38 +46,56 @@ li:last-child {
 }
 
 li:hover {
-    background-color: #e6f7ff;
+    background-color: #fce4ec; /* Light Pink hover effect */
+    transform: translateX(5px);
 }
 
+/* --- List Type Customization --- */
 #unordered-list {
-    list-style-type: circle;
+    list-style-type: '🐠 '; /* Custom marker (Fish emoji for fun) */
+    padding-left: 30px;
 }
 
 #ordered-list {
-    list-style-type: decimal-leading-zero;
+    list-style-type: upper-roman;
+    color: #388e3c; /* Darker green list items */
 }
 
+/* --- Interactivity Status --- */
 .completed {
     text-decoration: line-through;
-    color: #a0a0a0;
+    color: #a5d6a7; /* Light green for completed item */
     font-style: italic;
-    background-color: #f7f7f7;
+    background-color: #f1f8e9; /* Very light background for completed */
 }
 
-#newItemText, #listType, #addItemButton {
-    padding: 10px;
-    margin-right: 10px;
-    border-radius: 4px;
-    border: 1px solid #c0c0c0;
+/* --- Input & Button Styles (Action Zone) --- */
+h3 {
+    color: #ffb300; /* Amber title for action section */
+}
+
+#newItemText, #listType {
+    padding: 12px;
+    margin-right: 15px;
+    border-radius: 8px;
+    border: 2px solid #b3e5fc; /* Light blue border */
+    font-size: 1em;
+    width: 250px;
 }
 
 #addItemButton {
-    background-color: #1e90ff;
-    color: white;
+    padding: 12px 25px;
+    background-color: #ffb300; /* Primary action color (Amber) */
+    color: #333;
+    font-weight: bold;
     border: none;
+    border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 #addItemButton:hover {
-    background-color: #007bb6;
+    background-color: #ff8f00; /* Darker Amber on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
